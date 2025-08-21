@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    /* Timeline */
+    .timeline {
+      position: relative;
+      margin: 20px 0;
+      padding-left: 40px;
+      border-left: 3px solid #2c3e50;
+    }
+    .timeline article {
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .timeline article::before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background: #2c3e50;
+      border-radius: 50%;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: #fff;
+      margin-top: 40px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>John Doe</h1>
+    <p>Frontend Developer | Web Designer | Intern</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Profile Summary -->
+  <section id="summary">
+    <h2>Profile Summary</h2>
+    <p>
+      A passionate and detail-oriented frontend developer with over 2 years of experience 
+      in designing and developing interactive, user-friendly, and responsive web applications. 
+      Skilled at combining creativity with problem-solving to deliver clean and efficient solutions. 
+      Experienced in working with startups, internships, and team collaborations in agile environments. 
+      Looking to leverage skills in frontend technologies and design to contribute to innovative projects.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>Frontend: HTML5, CSS3, JavaScript (ES6+), React.js</li>
+      <li>Backend: Node.js, Express.js</li>
+      <li>Databases: MySQL, MongoDB</li>
+      <li>Version Control: Git & GitHub</li>
+      <li>Tools: VS Code, Postman, Figma</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Problem-Solving & Analytical Thinking</li>
+      <li>Strong Communication & Collaboration</li>
+      <li>Time Management & Adaptability</li>
+      <li>Creativity & Design Thinking</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>Personal Portfolio Website</h3>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+      <p>Created a responsive portfolio showcasing my skills, education, and projects. 
+         Designed with a modern UI and integrated GitHub project links.</p>
+    </article>
+    <article>
+      <h3>E-Commerce Website</h3>
+      <p><strong>Technologies:</strong> React.js, Node.js, MongoDB</p>
+      <p>Developed a mini e-commerce platform with product listing, cart system, 
+         and secure checkout process. Focused on scalability and UI design.</p>
+    </article>
+    <article>
+      <h3>Task Manager App</h3>
+      <p><strong>Technologies:</strong> JavaScript, Local Storage</p>
+      <p>Created a task manager to add, update, delete, and filter tasks. 
+         Implemented local storage for persistence.</p>
+    </article>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science</strong> – ABC University, 2019–2023  
+          <br> Key Courses: Data Structures, Web Development, DBMS, Software Engineering  
+          <br> Achievements: Top 10% of class, Hackathon finalist
+      </li>
+      <li><strong>Intermediate (MPC)</strong> – XYZ Junior College, 2017–2019  
+          <br> Secured 92% in final board exams
+      </li>
+      <li><strong>High School</strong> – Little Flower High School, 2017  
+          <br> Won school-level coding and quiz competitions
+      </li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <article>
+        <h3>Frontend Developer Intern</h3>
+        <p><em>Jan 2023 – Jun 2023 | WebTech Solutions</em></p>
+        <ul>
+          <li>Developed responsive and cross-browser compatible web pages.</li>
+          <li>Collaborated with designers to improve UI/UX using Figma & CSS frameworks.</li>
+          <li>Worked in agile sprints and delivered features on time.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Web Designer</h3>
+        <p><em>Jul 2022 – Dec 2022 | Creative Studios</em></p>
+        <ul>
+          <li>Designed landing pages for marketing campaigns, increasing user engagement by 30%.</li>
+          <li>Optimized websites for SEO and page performance.</li>
+          <li>Handled client requirements and delivered customized solutions.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Certified Frontend Developer – FreeCodeCamp (2022)</li>
+      <li>JavaScript Algorithms & Data Structures – Coursera (2021)</li>
+      <li>Responsive Web Design – Udemy (2020)</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Achievements & Awards</h2>
+    <ul>
+      <li>Hackathon Finalist – ABC University Coding Challenge (2022)</li>
+      <li>Best Intern Award – WebTech Solutions (2023)</li>
+      <li>Published a blog on “Modern Web Development Trends” with 5,000+ views</li>
+    </ul>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Coding challenges & competitive programming</li>
+      <li>UI/UX design exploration</li>
+      <li>Blogging about technology</li>
+      <li>Photography & Travel</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: johndoe@email.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>LinkedIn: linkedin.com/in/johndoe</p>
+    <p>GitHub: github.com/johndoe</p>
+    <h3>Send me a message:</h3>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 John Doe | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
